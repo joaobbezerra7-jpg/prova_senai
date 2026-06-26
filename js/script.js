@@ -1,5 +1,6 @@
-const form = document.querySelector("form")
-const divResul = document.querySelector("div-resul")
+import { calcularLote } from "./calculo.js"
+const form = document.querySelector("#form")
+const divResul = document.querySelector("#div-resul")
 
 form.addEventListener('submit', (evt) =>{
     evt.preventDefault()
@@ -16,13 +17,19 @@ form.addEventListener('submit', (evt) =>{
         lot,
         comp,
         larg,
+        area: comp * larg,
+        valor: (comp * larg) * 550
+        
     }
 
     const lotesCadastrados = [];
 
     lotesCadastrados.push(lotes);
 
-    console.log(lotesCadastrados);
+    divResul.innerHTML += calcularLote(lotesCadastrados)
+
+
+   
 
     form.reset()
 })
