@@ -1,7 +1,7 @@
 
 function calcularLote(arrayFormas) {
     
-
+    // Verifica cada propriedade de cada item (objeto) do array
     for (const info of arrayFormas) {
         
         if (info.valor <= 20000) {
@@ -58,4 +58,5 @@ function calcularLote(arrayFormas) {
     
 }
 
+// Exportação da função
 export { calcularLote }
