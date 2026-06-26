@@ -5,6 +5,8 @@ const divResul = document.querySelector("#div-resul")
 form.addEventListener('submit', (evt) =>{
     evt.preventDefault()
 
+    
+
     const objFormDados = new FormData(form);
 
     let quadra = objFormDados.get('quadra');
