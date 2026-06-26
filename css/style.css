@@ -1,0 +1,41 @@
+body{
+    background-color: bisque;
+}
+
+input{
+    display: block;
+}
+
+#geral{
+    border: solid 2px;
+    width: 280px;
+    position: relative;
+    top: 40px;
+    left: 800px;
+    background-color: rgb(255, 217, 5);
+    box-shadow: 10px 10px;
+    
+
+}
+
+#form{
+    position: relative;
+    left:50px;
+    
+    margin: 5px;
+}
+
+button{
+    margin: 5px;
+}
+
+#div-resul{
+    position: relative;
+    top: 60px;
+    left: 650px;
+    width: 550px;
+    border: solid 3px;
+    box-shadow: 10px 10px;
+    text-align: center;
+   
+}
